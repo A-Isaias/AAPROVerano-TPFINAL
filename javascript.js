@@ -19,4 +19,10 @@ function calcularEnvio() {
 /*esta funcion pide a traves de un prompt la distancia para el envio si es menor a 40 kms el envío es gratis
 y se actualiza el contenido del elemento con el id envio con la cadena HTML '<span id="envio-gratis">Envío gratis</span>' 
 utilizando la propiedad innerHTML del objeto document.getElementById() y si no lo mismo pero con la cadena de "envio-pago".*/
+/**/
+const navbarToggler = document.querySelector('.navbar-toggler');
+const navbarCollapse = document.querySelector('.navbar-collapse');
 
+navbarToggler.addEventListener('click', () => {
+    navbarCollapse.classList.toggle('show');
+});
