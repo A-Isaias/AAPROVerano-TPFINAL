@@ -19,10 +19,20 @@ function calcularEnvio() {
 /*esta funcion pide a traves de un prompt la distancia para el envio si es menor a 40 kms el envío es gratis
 y se actualiza el contenido del elemento con el id envio con la cadena HTML '<span id="envio-gratis">Envío gratis</span>' 
 utilizando la propiedad innerHTML del objeto document.getElementById() y si no lo mismo pero con la cadena de "envio-pago".*/
-/**/
+
+/* este código permite mostrar u ocultar el menú de navegación en dispositivos móviles cuando se hace clic en el botón de hamburguesa.*/
 const navbarToggler = document.querySelector('.navbar-toggler');
 const navbarCollapse = document.querySelector('.navbar-collapse');
 
 navbarToggler.addEventListener('click', () => {
     navbarCollapse.classList.toggle('show');
+});
+/*oculta menu cuando hacemos click en una de las opciones de la barra de navegacion en modo "hamburguesa"*/
+const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+navLinks.forEach(link => {
+  link.addEventListener('click', () => {
+    if (window.innerWidth < 768) {
+      navbarCollapse.classList.remove('show');
+    }
+  });
 });
