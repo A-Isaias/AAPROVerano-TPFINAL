@@ -29,10 +29,10 @@ navbarToggler.addEventListener('click', () => {
 });
 /*oculta menu cuando hacemos click en una de las opciones de la barra de navegacion en modo "hamburguesa"*/
 const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
 navLinks.forEach(link => {
   link.addEventListener('click', () => {
-    if (window.innerWidth < 768) {
-      navbarCollapse.classList.remove('show');
-    }
+    navbarCollapse.classList.remove('show');
   });
 });
+/*Este código selecciona todos los enlaces de la barra de navegación y agrega un escuchador de eventos de clic a cada uno. Cuando se hace clic en uno de los enlaces, se quita la clase "show" del elemento de la barra de navegación, lo que oculta el menú hamburguesa.*/
