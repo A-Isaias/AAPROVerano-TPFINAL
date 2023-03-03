@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pagina web de ARIEL EN MOTO</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="bootstrap.min.css"> <!--CARGA BOOTSTRAP DESDE ARCHIVO LOCAL-->
+    
+</head>
+<body>
+	<!-- Mensaje para confirmar si es mayor de edad -->
+	<script>
+		var edad = prompt("¿Eres mayor de edad? (si/no)");
+		if (edad == "si") {
+			alert("¡Bienvenido! Puedes acceder al sitio.");
+		} else {
+			alert("Debes ser mayor de edad para navegar por este sitio. Entra bajo tu propia responsabilidad.");
+		}
+	</script>
+	
+	<!-- Imagen de fondo de la pagina -->
+	<div class="bg-image"></div>
+
+	<!-- Barra de navegacion -->
+	<nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+		<a class="nav-link youtube-btn" href="https://www.youtube.com/@arielenmoto">ARIEL EN MOTO</a>
+		
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+		<div class="collapse navbar-collapse" id="navbarNav">
+			<ul class="navbar-nav">
+				<li class="nav-item active">
+					<a class="nav-link btn btn-lg" href="#">Inicio</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-lg" href="#productos">Productos</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-lg" href="#integrantes">Integrantes</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-lg" href="#contacto">Contacto</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link btn btn-lg" href="#descargas">Descargas</a>
+				</li>
+			</ul>
+		</div>
+	</nav>
+
+	<!-- Cuerpo principal de la pagina -->
+	<main>
+		
+		<div class="container">
+			<h1>Bienvenidos a la web de Ariel En Moto</h1>
+			<p>¡Colabora con nuestros viajes comprando los mejores productos!</p>
+
+			<h2 id="productos">Productos</h2>
+			<p>¡Llevate ya tu producto oficial de Ariel En Moto!</p>
+			<div id="carouselExampleCaptions" class="carousel slide">
+				<div class="carousel-indicators">
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+					<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+					</div>
+					<div class="carousel-inner">
+					<div class="carousel-item active">
+						<img src="img/REMERA.PNG" class="d-block w-100 mx-auto" alt="Remera Ariel en Moto">
+						<div class="carousel-caption d-none d-md-block">
+						<h5>Remera Ariel En Moto</h5>
+						<p>Fabricada con materiales de primera calidad.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/CUELLO2.png" class="d-block w-100 mx-auto" alt="Cuello Ariel en Moto">
+						<div class="carousel-caption d-none d-md-block">
+						<h5>Cuello Ariel En Moto</h5>
+						<p>Infaltable , protege el cuello del sol y/o del frio. se puede convertir en gorro.</p>
+						</div>
+					</div>
+					<div class="carousel-item">
+						<img src="img/velocidad crucero.png" class="d-block w-100 mx-auto" alt="Llaveros Ariel en moto">
+						<div class="carousel-caption d-none d-md-block">
+						<h5>Velocidad Crucero Ariel En Moto</h5>
+						<p>Indispensable para rutear.</p>
+						</div>
+					</div>
+					</div>
+					<button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+					<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Previous</span>
+					</button>
+					<button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="visually-hidden">Next</span>
+					</button>
+				</div>	
+				<div class="botonenvio">
+					<button onclick="calcularEnvio()">Calcular envío</button>
+					<p id="envio"></p>
+				</div>
+		<article>	
+			<h2 id="integrantes">Nuestro Equipo</h2>
+			<!-- Tabla con los integrantes -->
+			<table class="table">
+				<thead>
+					<tr>
+						<th>Nombre</th>
+						<th>Tareas Asignadas</th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>Honda CB250f Twister</td>
+						<td>La que nos lleva a todos lados</td>
+						<td><img src="img/IMG_20230301_111545_409.jpg" width="250px"></td>
+					</tr>
+					<tr>
+						<td>Ariel</td>
+						<td>Piloto, editor y narrador.</td>
+						<td><img src="img/ARIEL.jpg"width="250px"></td>
+					</tr>
+					<tr>
+						<td>Magdalena</td>
+						<td>Co-Piloto, navegante, cameraman.</td>
+						<td><img src="img/MALE.jpg"width="250px"></td>
+					</tr>
+					</tbody>
+				</table>
+				<h2 id="contacto">Contacto</h2>
+				<!-- Formulario de contacto -->
+				<form>
+					<div class="form-group">
+						<label for="nombre">Nombre completo</label>
+						<input type="text" class="form-control" id="nombre" required>
+					</div>
+					<div class="form-group">
+						<label for="email">Correo electrónico</label>
+						<input type="email" class="form-control" id="email" required>
+					</div>
+					<div class="form-group">
+						<label for="mensaje">Mensaje</label>
+						<textarea class="form-control" id="mensaje" rows="3" required></textarea>
+					</div>
+					<button type="submit" class="btn btn-primary">Enviar</button>
+				</form>
+		
+				<!-- Enlace para descargar archivo pdf -->
+				<br>
+				<h3 id="descargas">Descargas</h3>
+				<p style="font-size: 20px;">Descarga nuestro archivo <a href="ARIEL EN MOTO.pdf" download>aquí</a>.</p> <!--cambie el estilo de este texto sin ir al archivo css para que no mezclar y que no se rompa total es solo este texto-->
+				
+			</div>
+		</article>	
+		<aside>
+				<h3>Videos de Ariel En Moto</h3>
+				<h4>Nuestro canal de youtube: @arielenmoto</h4>
+				
+				
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/H3xMzw1FnxM" title="SUPERSONIC TRACK DAY AUTODROMO SAN NICOLAS CON VIRGINIA GUIDETTI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/gque-PVaqHo" title="EL PEOR RIPIO DE LA RUTA 40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/tgG2LNGdqcg" title="EN BUSCA DE LA NIEVE PERDIDA - EP. 5: TRAFICO EN LA FRONTERA - EL PELIGRO DE LOS CAMIONES PARADOS" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/Es0RZRiy_h0" title="EN BUSCA DE LA NIEVE PERDIDA - EPiSODIO 2 - PASO PEHUENCHE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/KLOFHq2sesw" title="Derrumbe En La Ruta 40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/AVkQskZWEhc" title="Camino a Villa Pehuenia" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/sWYMK_aCQLU" title="Ruta De Los 7 Lagos Argentina" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/Z2uxzlTNYzI" title="EL FINAL DEL CAMINO - BARILOCHE 2021 EPISODIO 14" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/-_SyhZ63Rp8" title="ARIEL EN MOTO VS LA RUTA 40" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				<iframe width="331" height="186" src="https://www.youtube.com/embed/74AdmZ02Ymk" title="Aventuras en Villa Yacanto - Buscando el camino al Filo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+		</aside>
+    </main>
+        <!-- Pie de pagina -->
+        <footer>
+			<div class="redes-sociales">
+			<a href="https://api.whatsapp.com/send/?phone=5493364338670&text=Hola,%20quisiera%20mas%20informacion%20sobre%20Ariel%20en%20Moto%20(Enviando%20desde%20la%20webpage%20de%20Ariel%20en%20Moto)&type=phone_number&app_absent=0"><img src="img/whatsapp.png" alt="Whatsapp"></a> 
+			<a href="https://www.facebook.com/arielenmoto/"><img src="img/facebook.png" alt="Facebook"></a>
+			<a href="https://www.instagram.com/arielenmoto.com.ar/"><img src="img/instagram.png" alt="Instagram"></a>
+			</div>
+			<p>&copy; (C) 2023-2024 Ariel Isaias Inc. Puente al Trabajo, Aprender a Programar Verano SRL . San Nicolas de los Arroyos, Todos los derechos reservados.</p>
+		</footer>
+		
+        
+        
+        <script src="javascript.js">
+        </script>
+        <script script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
+        crossorigin="anonymous"></script>
+    </body>
+    </html>
+
