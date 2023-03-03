@@ -20,11 +20,11 @@ main {
     display: flex;
     color: white;
   }
- /*igual que el anterior pero le di un fondo con alpha de 0.7 (semitransparente)*/ 
+ /*igual que el anterior pero le di un fondo con alpha de 0.75 (semitransparente)*/ 
   article {
     flex: 3;
     color: white;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0,0,0,0.75);
   }
   /*propiedades del aside margenes y colores*/
   aside {
